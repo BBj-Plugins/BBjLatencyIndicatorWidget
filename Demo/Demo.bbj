@@ -1,0 +1,17 @@
+use ::BBjLatencyIndicatorWidget/BBjLatencyIndicatorWidget.bbj::BBjLatencyIndicatorWidget
+
+? 'HIDE'
+
+
+wnd! = BBjAPI().openSysGui("X0").addWindow(10,10,800,600,"BBj Latency Indicator Widget Demo")
+wnd!.setCallback(BBjAPI.ON_CLOSE,"byebye")
+
+indicator! = new BBjLatencyIndicatorWidget(wnd!,100,10,10,40,40)
+indicator!.setBackColor(BBjAPI().makeColor("WHITE"))
+
+process_events
+
+rem ON_CLOSE event handler
+byebye:
+    bye
+
