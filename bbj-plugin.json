@@ -1,6 +1,6 @@
 {
 	"name":"BBjLatencyIndicatorWidget",
-	"description":"A graphical indicator for the UI to show the latency / quality of the connection",
+	"description":"A graphical indicator for the UI to show the latency / quality of the Thin Client connection.",
 	"version":"0.01",
 	"author":"Basis",
 	"plugin_dependencies":[
