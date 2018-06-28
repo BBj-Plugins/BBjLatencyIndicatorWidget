@@ -105,7 +105,7 @@ class public BBjLatencyIndicatorWidget extends BBjWidget
 
         i! = #BarImgs!.getItem(b)
         #TbCanvas!.setImage(i!)
-        #TbCanvas!.setToolTipText("Latency "+str(l:"##0.00")+" ms")
+        #TbCanvas!.setToolTipText("Latency "+str(l:"##0.00",err=*next)+" ms",err=*next)
     methodend
 
 classend
